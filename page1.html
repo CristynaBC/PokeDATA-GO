@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="page1.css" />
+    <title>PokéData Go</title>
+
+  </head>
+
+  <body>
+    <div class="contentAll">
+      <header>
+        <figure id="imagen">
+          <img class="logo1" src="PokeData.png" alt="Logo PokeData Go" />
+          <img class="logo2" src="Go.png" alt="Logo PokeData Go" />
+
+        </figure>
+        
+        <div class="nav1">
+          <button onclick="location.href='index.html'" class="btn1">
+            Homepage
+          </button>
+          <button onclick="location.href='page2.html'" class="btn1">
+            Compare
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <div class="conteiner">
+
+          <section class="card-main-display">
+            <nav class="nav">
+                <input
+                  type="text"
+                  placeholder="Search by name"
+                  class="input-search"
+                  id="searchByName"
+                />
+
+                <select id="sortName" class="btn-name">
+                  <option value="Name" style="display: none">Name</option>
+                  <option class="options" value="A-Z">A-Z</option>
+                  <option class="options" value="Z-A">Z-A</option>
+                </select>
+              
+                <select id="sortNum" class="btn-num">
+                  <option style="display: none">Pokédex Number</option>
+                  <option class="options" value="0-9">Ascending</option>
+                  <option class="options"value="9-0">Descending</option>
+                </select>
+              
+
+                <select id="typeFilter" class="type-filter">
+                  <option
+                    value="typeTitle"
+                    disabled
+                    selected
+                    style="display: none"
+                  >
+                    Type
+                  </option>
+                  <option class="options" value="All">All</option>
+                  <option class="options" value="Bug">Bug</option>
+                  <option class="options" value="Dark">Dark</option>
+                  <option class="options" value="Dragon">Dragon</option>
+                  <option class="options" value="Electric">Electric</option>
+                  <option class="options" value="Fairy">Fairy</option>
+                  <option class="options" value="Fighting">Fighting</option>
+                  <option class="options" value="Fire">Fire</option>
+                  <option class="options" value="Flying">Flying</option>
+                  <option class="options" value="Ghost">Ghost</option>
+                  <option class="options" value="Grass">Grass</option>
+                  <option class="options" value="Ground">Ground</option>
+                  <option class="options" value="Ice">Ice</option>
+                  <option class="options" value="Rock">Normal</option>
+                  <option class="options" value="Poison">Poison</option>
+                  <option class="options" value="Psychic">Psychic</option>
+                  <option class="options" value="Rock">Rock</option>
+                  <option class="options" value="Steel">Steel</option>
+                  <option class="options" value="Water">Water</option>
+                </select>
+              
+            </nav>
+          </section>
+        </div>
+
+        <!--  <h2 class="statistic">Foram encontrados 251 tipos de pokemons, equivale a 100.0%</h2>-->
+
+          <div class="allPokemon" id="pokemonList"></div>
+        
+      </main>
+
+
+      <footer class="footer">
+        <p id="footerText">
+          PokéData Go, 2023 <br /><strong
+            ><em>Created by Cristyna Costa and Ninoska Contreras</em></strong
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
