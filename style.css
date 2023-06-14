@@ -77,3 +77,38 @@ main {
 
 
 
+.footer {
+  text-align: center;
+}
+
+@media  screen and (max-width: 770px) {
+
+  .logo1 {
+    margin-left: 90px ;
+  }
+
+  .logo2 {
+    margin-left: 210px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ 
+  .logo1 {
+    margin-left: 0px;
+    width: 300px;
+  }
+  .logo2 {
+    margin-left: 90px;
+    width: 120px;
+
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+    margin-right:20px;
+    margin-left: 20px;
+  }
+  
+ 
+  }

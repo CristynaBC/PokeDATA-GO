@@ -20,10 +20,12 @@ function updatePokemonList(filteredPokemons) {
 
   filteredPokemons.forEach((pokemon) => {
     const card = document.createElement("div");
+    
     let typePkm = "";
     pokemon.type.forEach((type) => {
       typePkm += `<p class="type-style ${type}">${type}</p>`;
     });
+
     card.innerHTML = `
       <div class="pokemon">
         <p class="pokemon-numero">${pokemon.num}</p>
@@ -41,6 +43,7 @@ function updatePokemonList(filteredPokemons) {
 
     pkmCards.appendChild(card);
   });
+  
   htmlStatistic.textContent = " "
 }
 
@@ -68,6 +71,7 @@ sortNameInput.addEventListener("change", () => {
     const orderedByNamePokemons = sortByName('z-a', data.pokemon);
     return updatePokemonList(orderedByNamePokemons);
   }
+  
 });
 
 // Ordenar por número
